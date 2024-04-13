@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+    <h1>Welcome to the Guestbook!</h1>
+    <p>Write about your experience with us.<br>
+        Thank you for your visit. </p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" name="view_posts">View Existing Posts</button>
+        <button type="submit" name="add_post">Add New Post</button>
+    </form>
+    </div>
+</body>
+</html>

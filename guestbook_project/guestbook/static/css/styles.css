@@ -1,0 +1,5 @@
+.container {
+    text-align: center; /* Centrare text */
+    margin: auto; /* Centrare container */
+    width: 50%; /* Ajustează lățimea containerului la 50% din lățimea paginii */
+}
