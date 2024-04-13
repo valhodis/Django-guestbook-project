@@ -7,6 +7,8 @@
 </head>
 <body>
     <h1>Guestbook</h1>
+    <a href="{% url 'home_view' %}"><button>Home</button></a>
+    <a href="{% url 'add_guestbook_entry' %}"><button>Add Guestbook Entry</button></a>
     <ul>
         {% for entry in entries %}
             <li><strong>{{ entry.name }}</strong>: {{ entry.message }}</li>
